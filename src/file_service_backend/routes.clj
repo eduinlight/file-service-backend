@@ -4,6 +4,7 @@
             [ring.util.http-response :refer :all]
             [file-service-backend.schemas :as schemas]
             [file-service-backend.utils :as utils]
+            [schema.core :as s]
             )
 )
 
@@ -151,5 +152,13 @@
     )
     ;;DESCARGAR ARCHIVO (SOLO PARA ARCHIVOS)
     ;;/files/download => GET => {path: ''} => genera un response de descarga
+    (GET "/files/download" []
+      :summary "descargar archivo"
+      :query-params [path :- String]
+      (file-response (.getName (io/file path)) {:root (.getCanonicalPath (io/file path))})
+      :headers {}
+      :status 200
+      :body (io/file path)
+    )
   )
 )
