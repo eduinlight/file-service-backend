@@ -21,7 +21,7 @@ $ lein ring server 4000
 
 ## Swagger documentation
 
-Enter to http://localhost:4000 and you can see something like this image.
+Enter to http://localhost:4000 and you will see something like this image.
 
 ![](https://github.com/eduinlight/file-service-backend/blob/master/images/swagger.png "swagger")
 
