@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /target
 /classes
 /checkouts
@@ -11,17 +10,3 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
-=======
-/target
-/classes
-/checkouts
-profiles.clj
-pom.xml
-pom.xml.asc
-*.jar
-*.class
-/.lein-*
-/.nrepl-port
-.hgignore
-.hg/
->>>>>>> 771798138ecbec37c6e729313555ffad9f72264f
