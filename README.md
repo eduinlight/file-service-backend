@@ -27,6 +27,4 @@ Enter to http://localhost:4000 and you can see something like this image.
 
 ---
 
-## LICENCE
-
-![LICENCE](https://github.com/eduinlight/file-service-backend/blob/master/LICENCE)
+![LICENCE](https://github.com/eduinlight/file-service-backend/blob/master/LICENSE)
