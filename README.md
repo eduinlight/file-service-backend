@@ -1,56 +1,26 @@
-<<<<<<< HEAD
 # File Server Api
-Api creada con compojure-api para cumplir con los requerimientos
 
-Create a Clojurescript *Single Page Application* to display a file tree.
+This is the File server api from of the [file server frontend]('https://github.com/eduinlight/file-service-frontend').
 
-The root node for the tree should be specified by the client application.
-Tree nodes should initially appear collapsed, with subtrees rendered after
-expansion of the parent node.  
+## Instructions
 
-Any representation for the tree is valid (graphical, text based, ...) as 
-long as it shows clearly the hierarchical relationships between tree nodes.
-Additionally, the leaf nodes representing text files on disk should 
-allow the user to display a preview of the file's content. 
-The strategy for discriminating which files are suported for previewing 
-is up to the developer.
+1. Install [leiningen]('https://leiningen.org/')
+2. Install dependencies
 
-You may
-- Add any routes/actions to server
-- Choose any set of server side operations to provide data to the client
-- Use any data representation format for the information exchange
-- Use any frotend framework for the cljs SPA
-- Use any third party library
+```BASH
+$ git clone https://github.com/eduinlight/file-service-backend
+$ cd file-service-backend
+$ lein deps
+```
 
-GreenPowerMonitor © 2018
+3. Run the server on port 4000
 
-## Run
-=======
-# File Server Api
-Api creada con compojure-api para cumplir con los requerimientos
+```BASH
+$ lein ring server 4000
+```
 
-Create a Clojurescript *Single Page Application* to display a file tree.
+## Swagger documentation
 
-The root node for the tree should be specified by the client application.
-Tree nodes should initially appear collapsed, with subtrees rendered after
-expansion of the parent node.  
+Enter to http://localhost:4000 and you can see something like this image.
 
-Any representation for the tree is valid (graphical, text based, ...) as 
-long as it shows clearly the hierarchical relationships between tree nodes.
-Additionally, the leaf nodes representing text files on disk should 
-allow the user to display a preview of the file's content. 
-The strategy for discriminating which files are suported for previewing 
-is up to the developer.
-
-You may
-- Add any routes/actions to server
-- Choose any set of server side operations to provide data to the client
-- Use any data representation format for the information exchange
-- Use any frotend framework for the cljs SPA
-- Use any third party library
-
-GreenPowerMonitor © 2018
-
-## Run
->>>>>>> 771798138ecbec37c6e729313555ffad9f72264f
-lein ring server 4000
+[]('https://github.com/eduinlight/file-service-backend/blob/master/images/swagger.png' swagger)
