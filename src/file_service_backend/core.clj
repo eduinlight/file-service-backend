@@ -15,10 +15,12 @@
                     :description "File Service for Backend"}
              :tags [{:name "api", :description "some apis"}]}}}
     
-    (my-routes)
+    ; (my-routes)
 
     ;AGREGANDO SOPORTE PARA CORS UFF QUE TRABAJITO
-    (wrap-cors routes
-      :access-control-allow-origin [#".*"])
+    (wrap-cors (my-routes)
+      :access-control-allow-origin [#"http://localhost:3449" #"http://127.20.10.2:3449"]
+      :access-control-allow-methods [:get :put :delete :post :options]
+      :access-control-allow-headers [:accept :content-type])
   )
 )
